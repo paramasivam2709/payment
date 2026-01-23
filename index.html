@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly Pay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone">
+
+  <!-- Header -->
+  <header class="top-bar">
+    <h2>Stackly Pay</h2>
+    <div class="avatar"></div>
+  </header>
+
+  <!-- Balance -->
+  <section class="balance">
+    <p>Available balance</p>
+    <h1>₹42,850</h1>
+  </section>
+
+  <!-- Actions -->
+  <section class="grid">
+    <div class="item">📷<span>Scan</span></div>
+    <div class="item">👤<span>Pay</span></div>
+    <div class="item">🏦<span>Bank</span></div>
+    <div class="item">🎁<span>Rewards</span></div>
+  </section>
+
+  <!-- Pay Sheet -->
+  <section class="pay-sheet" id="paySheet">
+    <input type="number" placeholder="Enter amount ₹" id="amount">
+    <button id="payBtn">Pay</button>
+  </section>
+
+  <!-- Success -->
+  <section class="success hidden" id="success">
+    <div class="tick">✓</div>
+    <h3>Payment successful</h3>
+    <p>Paid using Stackly Pay</p>
+  </section>
+
+  <!-- Bottom Nav -->
+  <nav class="bottom-nav">
+    <span class="active">Home</span>
+    <span>Scan</span>
+    <span>History</span>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
