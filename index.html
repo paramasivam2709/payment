@@ -1,58 +1,223 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stackly Pay</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+  <div class="nav">
+    <div class="logo">Stackly Pay</div>
+    <div>
+      <a href="#">Login</a>
+      <a class="btn" href="#">Sign Up</a>
+    </div>
+  </div>
+</header>
 
-<div class="phone">
+<section class="hero">
+  <div>
+    <h1>Online Quick Recharge.<br>Save Time & Money!</h1>
 
-  <!-- Header -->
-  <header class="top-bar">
-    <h2>Stackly Pay</h2>
-    <div class="avatar"></div>
-  </header>
+    <div class="tabs">
+      <div class="tab active"><i class="fa-solid fa-mobile"></i>Mobile</div>
+      <div class="tab"><i class="fa-solid fa-tv"></i>DTH</div>
+      <div class="tab"><i class="fa-solid fa-wifi"></i>Broadband</div>
+      <div class="tab"><i class="fa-solid fa-bolt"></i>Electricity</div>
+      <div class="tab"><i class="fa-solid fa-train-subway"></i>Metro</div>
+    </div>
 
-  <!-- Balance -->
-  <section class="balance">
-    <p>Available balance</p>
-    <h1>₹42,850</h1>
-  </section>
+    <div class="card">
+      <div class="form">
+        <input type="text" placeholder="Enter Mobile Number">
+        <select>
+          <option>Select Operator</option>
+          <option>Jio</option>
+          <option>Airtel</option>
+          <option>VI</option>
+        </select>
+        <input type="number" placeholder="Amount">
+        <button>Continue</button>
+      </div>
 
-  <!-- Actions -->
-  <section class="grid">
-    <div class="item">📷<span>Scan</span></div>
-    <div class="item">👤<span>Pay</span></div>
-    <div class="item">🏦<span>Bank</span></div>
-    <div class="item">🎁<span>Rewards</span></div>
-  </section>
+      <div class="radio">
+        <label><input type="radio" name="type" checked> Prepaid</label>
+        <label><input type="radio" name="type"> Postpaid</label>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Pay Sheet -->
-  <section class="pay-sheet" id="paySheet">
-    <input type="number" placeholder="Enter amount ₹" id="amount">
-    <button id="payBtn">Pay</button>
-  </section>
+<section class="offers">
+  <h2>Featured Offers</h2>
+  <p class="sub">Get Best Offers & Discounts</p>
 
-  <!-- Success -->
-  <section class="success hidden" id="success">
-    <div class="tick">✓</div>
-    <h3>Payment successful</h3>
-    <p>Paid using Stackly Pay</p>
-  </section>
+  <div class="offers-grid">
+    <div class="offer big">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="">
+      <div class="overlay">
+        <h3>Save 20% on Recharge & Bill</h3>
+        <span>Use Code: Recharge20</span>
+      </div>
+    </div>
 
-  <!-- Bottom Nav -->
-  <nav class="bottom-nav">
-    <span class="active">Home</span>
-    <span>Scan</span>
-    <span>History</span>
-  </nav>
+    <div class="offer big">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+      <div class="overlay">
+        <h3>5% OFF on Bill Payment</h3>
+        <span>Use Code: Bill5</span>
+      </div>
+    </div>
 
-</div>
+    <div class="offer small">
+      <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063" alt="">
+      <div class="overlay">
+        <h3>10% OFF</h3>
+        <span>On Metro Booking</span>
+      </div>
+    </div>
+
+    <div class="offer small">
+      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" alt="">
+      <div class="overlay">
+        <h3>15% OFF</h3>
+        <span>Electricity Bill</span>
+      </div>
+    </div>
+
+    <div class="offer small">
+      <img src="https://images.unsplash.com/photo-1581091870627-3a5d5f1d1c1c" alt="">
+      <div class="overlay">
+        <h3>10% OFF</h3>
+        <span>DTH Recharge</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="refer">
+  <h2>Refer & Earn</h2>
+  <p class="sub">Refer your friends and earn up to $20.</p>
+
+  <div class="refer-grid">
+
+    <div class="refer-card">
+      <i class="fa-solid fa-bullhorn"></i>
+      <h3>You Refer Friends</h3>
+      <p>Share your referral link with friends. They get $10.</p>
+    </div>
+
+    <div class="refer-card">
+      <i class="fa-solid fa-user-plus"></i>
+      <h3>Your Friends Register</h3>
+      <p>Your friends register using your referral link.</p>
+    </div>
+
+    <div class="refer-card">
+      <i class="fa-solid fa-dollar-sign"></i>
+      <h3>Earn You</h3>
+      <p>You get $20. You can use these credits to recharge.</p>
+    </div>
+
+  </div>
+
+  <button class="cta">Get Started Earn</button>
+</section>
+<!-- ================= APP DOWNLOAD ================= -->
+<section class="app-download">
+  <h2>Download Our Mobile App Now</h2>
+  <p>
+    Download our app for the fastest, most convenient way to Recharge & Bill
+    Payment, Booking and more...
+  </p>
+
+  <div class="store-btns">
+    <a href="#" class="store apple">
+      <i class="fa-brands fa-apple"></i>
+      App Store
+    </a>
+    <a href="#" class="store play">
+      <i class="fa-brands fa-google-play"></i>
+      Play Store
+    </a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-grid">
+
+    <div>
+      <h4>Services</h4>
+      <a>Mobile Recharge</a>
+      <a>Bill Payment</a>
+      <a>Flight Tickets Booking</a>
+      <a>Train Ticket Booking</a>
+      <a>Hotel Booking</a>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <a>About Us</a>
+      <a>Careers</a>
+      <a>Affiliate</a>
+      <a>Team</a>
+      <a>Blog</a>
+    </div>
+
+    <div>
+      <h4>Help Center</h4>
+      <a>Contact Us</a>
+      <a>Support</a>
+      <a>FAQ</a>
+      <a>Help</a>
+    </div>
+
+    <div>
+      <h4>Policies</h4>
+      <a>Privacy Policy</a>
+      <a>Terms & Conditions</a>
+      <a>Refund Policy</a>
+      <a>Grievance Policy</a>
+    </div>
+
+    <div>
+      <h4>Subscribe</h4>
+      <div class="subscribe">
+        <input type="email" placeholder="Your Email Address">
+        <button><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+
+      <p class="small">Subscribe to receive latest offers and updates.</p>
+
+      <h5>Verified By</h5>
+      <div class="payments">
+        <span>VISA</span>
+        <span>PayPal</span>
+        <span>AMEX</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Stackly Pay. All Rights Reserved.</p>
+
+    <div class="social">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </div>
+</footer>
 
 <script src="script.js"></script>
+
+
+
 </body>
 </html>
