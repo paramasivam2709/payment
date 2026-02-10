@@ -163,6 +163,23 @@
       font-size:14px;
     }
 
+    /* ---------- ERROR MESSAGE ---------- */
+    .error-msg{
+      color:#e11d48;
+      font-size:13px;
+      margin-top:12px;
+      padding:10px;
+      background:#fee2e2;
+      border-radius:8px;
+      border-left:4px solid #e11d48;
+      display:none;
+    }
+
+    .error-msg.show{
+      display:block;
+      animation:shake 0.5s ease;
+    }
+
     /* ---------- ANIMATIONS ---------- */
     @keyframes fadeDown{
       from{opacity:0;transform:translateY(-30px)}
@@ -172,6 +189,12 @@
     @keyframes fadeUp{
       from{opacity:0;transform:translateY(40px)}
       to{opacity:1;transform:translateY(0)}
+    }
+
+    @keyframes shake{
+      0%, 100%{transform:translateX(0)}
+      25%{transform:translateX(-5px)}
+      75%{transform:translateX(5px)}
     }
 
     /* ---------- RESPONSIVE ---------- */
@@ -316,12 +339,21 @@
   padding:30px 20px;
   border-radius:18px;
   transition:0.4s ease;
+  background:#f8fafc;
 }
 
 .refer-card i{
-  font-size:44px;
+  font-size:48px;
   color:#0a66ff;
   margin-bottom:18px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:80px;
+  height:80px;
+  background:rgba(10,102,255,0.15);
+  border-radius:12px;
+  transition:0.3s ease;
 }
 
 .refer-card h3{
@@ -339,6 +371,12 @@
 /* Hover animation */
 .refer-card:hover{
   transform:translateY(-10px);
+  background:#e0e7ff;
+}
+
+.refer-card:hover i{
+  background:rgba(10,102,255,0.2);
+  transform:scale(1.1);
 }
 
 /* ---------- BUTTON ---------- */
@@ -483,6 +521,11 @@ footer a:hover{
 
 .subscribe button:hover{
   background:#004be0;
+}
+
+.subscribe button i{
+  font-size:16px;
+  color:#fff;
 }
 
 .small{

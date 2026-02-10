@@ -25,4 +25,21 @@ cards.forEach(card=>{
   observer.observe(card);
 });
 
+// Form validation
+const continueBtn = document.getElementById("continueBtn");
+const mobileNumber = document.getElementById("mobileNumber");
+const operator = document.getElementById("operator");
+const amount = document.getElementById("amount");
+const errorMsg = document.getElementById("errorMsg");
 
+continueBtn.addEventListener("click", () => {
+  if (!mobileNumber.value || operator.value === "Select Operator" || !amount.value) {
+    errorMsg.classList.add("show");
+    setTimeout(() => {
+      errorMsg.classList.remove("show");
+    }, 3000);
+  } else {
+    // Redirect to 404 page
+    window.location.href = "404.html";
+  }
+});

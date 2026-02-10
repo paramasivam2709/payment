@@ -31,17 +31,18 @@
     </div>
 
     <div class="card">
-      <div class="form">
-        <input type="text" placeholder="Enter Mobile Number">
-        <select>
+      <div class="form" id="rechargeForm">
+        <input type="text" id="mobileNumber" placeholder="Enter Mobile Number">
+        <select id="operator">
           <option>Select Operator</option>
           <option>Jio</option>
           <option>Airtel</option>
           <option>VI</option>
         </select>
-        <input type="number" placeholder="Amount">
-        <button>Continue</button>
+        <input type="number" id="amount" placeholder="Amount">
+        <button type="button" id="continueBtn">Continue</button>
       </div>
+      <div id="errorMsg" class="error-msg" style="display:none;">Please fill all fields!</div>
 
       <div class="radio">
         <label><input type="radio" name="type" checked> Prepaid</label>
@@ -197,7 +198,7 @@
       <h4>Subscribe</h4>
       <div class="subscribe">
         <input type="email" placeholder="Your Email Address">
-        <button><i class="fa-solid fa-paper-plane"></i></button>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
       </div>
 
       <p class="small">Subscribe to receive latest offers and updates.</p>
